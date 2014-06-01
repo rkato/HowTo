@@ -1,0 +1,19 @@
+﻿<section>
+    <h3>Modal Demo</h3>
+    <hr/>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Child</h3>
+        </div>
+        <div class="panel-body">
+            <h3>Customer list</h3>
+            <hr />
+            <ul>
+                <!-- ko foreach: customers -->
+                <li>Name: <span data-bind="text: name"></span> &nbsp; Email: <span data-bind="text: email"></span> </li>
+                <!-- /ko -->
+            </ul>
+        </div>
+    </div>
+    <a data-bind="click: addCustomer" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Add Customer </a>
+</section>

@@ -1,0 +1,24 @@
+﻿<section>
+    <div class="messageBox">
+        <div class="modal-header">
+            <h3 data-bind="text: title"></h3>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Name</label>
+                        <input type="text" class="form-control" data-bind="value: name" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Email</label>
+                        <input type="email" class="form-control" data-bind="value: email" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a data-bind="click: add"><li class="fa fa-plus-circle"></li> add </a> &nbsp; <a data-bind="click: cancel"><li class="fa fa-undo"></li> Cancel </a>
+        </div>
+    </div>
+</section>
